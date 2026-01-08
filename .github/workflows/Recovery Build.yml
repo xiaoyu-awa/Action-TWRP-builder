@@ -1,10 +1,10 @@
-name: ¹¹½¨ Recovery
+name: ï¿½ï¿½ï¿½ï¿½ Recovery
 
 on:
   workflow_dispatch:
     inputs:
       MANIFEST_URL:
-        description: 'MANIFEST_URL (Èç¹ûÏëÊ¹ÓÃSSHÃÜÔ¿£¬ÇëÊ¹ÓÃ git@github.com:XXXXX)£¬°²×¿10ÒÔÉÏÉè±¸Ê÷£ºhttps://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
+        description: 'MANIFEST_URL (ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½SSHï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ git@github.com:XXXXX)ï¿½ï¿½ï¿½ï¿½×¿10ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
         required: true
         default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
       MANIFEST_BRANCH:
@@ -24,10 +24,10 @@ on:
         required: true
         default: 'device/gionee/GIONEE_BBL7516A'
       COMMON_TREE_URL:
-        description: 'COMMON_TREE_URL (Èç¹ûÃ»ÓÐÍ¨ÓÃÉè±¸Ê÷£¬ÇëÁô¿Õ)'
+        description: 'COMMON_TREE_URL (ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Í¨ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)'
         required: false
       COMMON_PATH:
-        description: 'COMMON_PATH (Èç¹ûÃ»ÓÐÍ¨ÓÃÉè±¸Ê÷£¬ÇëÁô¿Õ)'
+        description: 'COMMON_PATH (ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Í¨ï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)'
         required: false
       DEVICE_NAME:
         description: 'DEVICE_NAME'
@@ -45,7 +45,7 @@ on:
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
